@@ -19,7 +19,7 @@ h1 {
     font-size: 5rem;
 }
 
-button {
+.menu-button {
     background-color: var(--primary-color);
     color: var(--text-light);
     padding: 0;
@@ -28,7 +28,7 @@ button {
 }
 
 header {
-    padding-bottom: 5%;
+    padding-bottom: 20px;
 }
 
 header, footer {
@@ -57,7 +57,7 @@ body {
     background-color: rgb(223, 223, 223);
 }
 
-img {
+.pic {
 	max-width: 100%;
     object-fit: cover;
     width: 250px;
@@ -66,11 +66,49 @@ img {
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.884);
 }
 
+.hide {
+    display: none;
+}
+
+/* Modal View */
+
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    place-items: center;
+
+}
+
+.viewer img {
+    max-width: 80vw; /* Limit the maximum width of the images */
+    max-height: 80vh;
+    padding-bottom: 20px;
+    object-fit: contain;
+}
+
+.viewer button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2.5rem;
+    margin-left: 80%;
+    padding: 0; 
+    border: 0;
+}
+
 @media screen and (min-width: 700px){
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
     } 
+    
+    .hide {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1000px){
@@ -94,5 +132,9 @@ img {
     
     header button {
         display: none;
+    }
+
+    nav.hide {
+        display: flex;
     }
 }
