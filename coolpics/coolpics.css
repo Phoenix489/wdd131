@@ -55,6 +55,7 @@ body {
     font-family: var(--primary-font);
     font-size: 1.2em;
     background-color: rgb(223, 223, 223);
+    margin: 0;
 }
 
 .pic {
