@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --primary-color: #473144;
+    --secondary-color: #AF1B3F;
+    --accent-color: #EFC69B;
+    --text-dark: #333;
+    --text-light: #AF1B3F;
+    --body-font: Helvetica, Arial, sans-serif;
+    --headline-font: "Lora", Impact, serif;
+    }
+
+    .nav-bar {
+        justify-content: end;
+        justify-items: end;
+        padding: 15px;
+        padding-right: 73px;
+        margin: 0;
+        border: solid 1px var(--accent-color);
+        border-right: none;
+    }
+
+    .nav-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+    }
+
+    header {
+        grid-column: 1/4;
+        text-align: center;
+    }
+
+    header .website-title {
+        text-align: center;
+    }
+
+    header {
+        text-align: right;
+    }
+
+
+    .filter{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    }
+
+    .review-data {
+        justify-items: end;
+        padding-top: 30px;
+        padding-left: 30px;
+        font-family: var(--body-font);
+    }
+
+    .book {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        color: var(--text-dark);
+        font-family: var(--headline-font);
+        font-size: 3.2em;
+
+    }
+
+    .skiptocontent a {
+        position: absolute;
+        background-color: var(--secondary-color);
+        color: white;
+        left: 50px;
+        padding: 12px;
+        top: -50px;
+    }
+
+    .skiptocontent a:focus {
+        position: absolute;
+        background-color: var(--secondary-color);
+        color: white;
+        left: 50px;
+        padding: 12px;
+        top: 10px;
+    }
+
+    footer {
+        grid-row: 3/4;
+        text-align: center;
+        grid-column: 1/5;
+    }
+
+    li {
+        font-family: var( --body-font);
+        display: contents;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-light);
+        font-size: 1.3em;
+        margin-left: 20px;
+        padding: 5px
+    }
+
+    h2 {
+        font-family: var(--headline-font);
+        color: var(--secondary-color);
+        font-size: 1.9em;
+    }
+
+    .description {
+        font-family: var(--body-font);
+    }
