@@ -9,6 +9,14 @@
     --secondary-font: "Advent Pro";
     }
 
+.search-button {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+    margin-left: 10px; 
+    margin-top: 3px;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -155,9 +163,18 @@ body {
         margin-top: 10px;
     }
 
+    .search-button {
+        margin-top: 13px;
+    }
+
     .recipe-card {
         flex-direction: column;
         align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black
     }
 
     .recipe-details {
@@ -209,6 +226,7 @@ body {
     .recipe-card {
         flex-direction: row;
         align-items: flex-start;
+        margin-top: 10px;
     }
 
     .recipe-image {
