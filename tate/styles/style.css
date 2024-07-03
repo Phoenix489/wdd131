@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Home Page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    font-family: "Bebas Neue";
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 140px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+nav a:hover .logo {
+    background-color: black;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.nav_link {
+    padding: 61px;
+}
+
+nav .nav_link:hover {
+    background-color: white;
+    color: black;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+
+#stranger {
+    width: 65%;
+    margin-top: 50px;
+}
+
+.paragraph {
+    font-family: "Epilogue";
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.separator {
+    border-top: 1px solid black; 
+    margin: 40px auto; 
+    width: 1200px;
+  }
+
+.art {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+footer {
+    background-color: black;
+    padding: 25px 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 1.2em;
+    font-family: "Epilogue";
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}    
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.social {
+    width: 60px
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 60px;
+}
+
+video {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 20%;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .wide-modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width:90%; /* Limit maximum width of the modal content */
+    max-height: 90%;
+  }
+
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width:40%; /* Limit maximum width of the modal content */
+  }
+
+  .modal-content img {
+    max-width: 80vw; /* Limit the maximum width of the images */
+    max-height: 80vh; /* Limit the maximum height of the images */
+    /* width: auto; Ensure the width adjusts to maintain aspect ratio */
+    height: auto; 
+    display: block; /* Ensure proper spacing */
+    margin: auto; /* Center the image horizontally */
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.pic {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.pic:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    transform: translateY(-5px) scale(1.05); /* Lift and enlarge the image on hover */
+}
