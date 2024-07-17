@@ -187,6 +187,7 @@ video {
     margin: 0 auto;
     margin-top: 20px;
     border: 2px solid black;
+    max-width: 70%
 }
 
 .pic:hover {

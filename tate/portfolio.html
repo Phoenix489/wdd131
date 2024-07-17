@@ -161,30 +161,6 @@
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImg" src="#" alt="Modal Image">
     </div>
-    <script>
-        function openModal(imgElement) {
-            var modal = document.getElementById("myModal");
-            var modalImg = document.getElementById("modalImg");
-            modal.style.display = "block";
-            
-            // Check the width of the image
-            if (imgElement.naturalWidth > imgElement.naturalHeight) {
-                // If the width is greater than the height, add a class for wide images
-                modalImg.classList.add("wide-modal-content");
-                modalImg.classList.remove("modal-content");
-            } else {
-                // If the height is greater than or equal to the width, add a class for regular images
-                modalImg.classList.add("modal-content");
-                modalImg.classList.remove("wide-modal-content");
-            }
-            
-            modalImg.src = imgElement.src;
-        }
-    
-        function closeModal() {
-            var modal = document.getElementById("myModal");
-            modal.style.display = "none";
-        }
-    </script>
+    <script type="module" src="main.js" defer></script>
 </body>
 </html>

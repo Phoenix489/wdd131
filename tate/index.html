@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tate | Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="main.js" defer></script>
 </head>
 <body>
     <div id="content">
-
         <header>
             <nav>
                 <a id="logo_link" href="index.html">
@@ -20,34 +20,7 @@
             </nav>
         </header>
         <main>
-            <div class="main-container">
-                <div>
-                    <img class="pic" id="stranger" src="images/the-stranger.jpg" alt="The Stranger: 'Friend or Foe’" onclick="openModal(this)">
-                    <p class="paragraph">“The Stranger: ‘Friend or Foe’”
-                        2022, 24” x 18”, colored pencil, An adaptation of Frederic Remington’s “The Scout”, A Native American scout uses the cover of night to scout out a recently founded town, full of strangers to these lands.
-                    </p>
-                </div>
-                <div class="separator"></div>
-                <div>
-                    <img class="pic" id="gamble" src="images/the-gamble.jpg" alt="The Gamble" onclick="openModal(this)">
-                    <p class="paragraph">“The Gamble” 
-                        2023, Procreate, 8.5” x 11”, A trio of outlaw brothers travel around the old West, causing mischief and trouble. Poker is their latest venture.
-                    </p>
-                </div>
-                <div class="separator"></div>
-                <div>
-                    <img class="pic" id="sheriff" src="images/sheriff-deputy.jpg" alt="The Sheriff and His Deputy" onclick="openModal(this)">
-                    <p class="paragraph">“The Sheriff and His Deputy”
-                        2023, Photoshop, 11”x17”, After getting lost in a doggy daycare, a toy sheriff takes on one of the young puppies as his deputy. An unlikely duo forms and gets themselves into trouble.
-                    </p>
-                </div>
-                <div class="separator"></div>
-                <div>
-                    <img class="pic" id="frontier" src="images/covering-frontier.jpg" alt="Covering The New Frontier" onclick="openModal(this)">
-                    <p class="paragraph">“Covering The New Frontier”
-                        2024, Photoshop, 9”x12”, A conceptual illustration about how the United States government’s forced removal of over 60,000 Native Americans from their homes during the time of 1830 - 1850 was unethical, unfair, and cruel. 
-                    </p>
-                </div>
+            <div class="main-container" id="gallery"></div> <!-- Placeholder for dynamic content -->
                 <div class="separator"></div>
                 <div>
                     <h1>
@@ -73,36 +46,10 @@
                 </a>
             </div>
         </footer> 
-    
     </div>
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImg" src="#" alt="Modal Image">
     </div>
-    <script>
-        function openModal(imgElement) {
-            var modal = document.getElementById("myModal");
-            var modalImg = document.getElementById("modalImg");
-            modal.style.display = "block";
-            
-            // Check the width of the image
-            if (imgElement.naturalWidth > imgElement.naturalHeight) {
-                // If the width is greater than the height, add a class for wide images
-                modalImg.classList.add("wide-modal-content");
-                modalImg.classList.remove("modal-content");
-            } else {
-                // If the height is greater than or equal to the width, add a class for regular images
-                modalImg.classList.add("modal-content");
-                modalImg.classList.remove("wide-modal-content");
-            }
-            
-            modalImg.src = imgElement.src;
-        }
-    
-        function closeModal() {
-            var modal = document.getElementById("myModal");
-            modal.style.display = "none";
-        }
-    </script>
 </body>
 </html>
