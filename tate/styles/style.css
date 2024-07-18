@@ -185,7 +185,7 @@ video {
     transition: transform 0.3s ease; /* Smooth transition for transform property */
     display: flex;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 2px solid black;
     max-width: 70%
 }
